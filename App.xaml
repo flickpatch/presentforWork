@@ -1,0 +1,12 @@
+﻿<Application x:Class="AOA.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:AOA"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>            
+            <BitmapImage UriSource="/Resources/zaglushka.png" x:Key="zaglushka"/>
+            <BitmapImage UriSource="/Resources/default-user.png" x:Key="UserZaglushka" />
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,39 @@
+﻿<Window x:Class="AOA.Pages.EventsPages.EventAddWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AOA.Pages.EventsPages"
+        mc:Ignorable="d"
+        Title="EventAddWindow" Height="450" Width="400">
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin="10,20">
+            <StackPanel  >
+                <TextBlock Text="Название услуги:"/>
+                <TextBox Height="22" Width="220" HorizontalAlignment="Left" Text="{Binding Name}"/>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock Text="Стоимость услуги:"/>
+                <TextBox Height="22" Width="220" HorizontalAlignment="Left" Text="{Binding Price}"/>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock Text="Описание:"/>
+                <TextBox Height="100" Width="320" HorizontalAlignment="Left" Text="{Binding Description}"/>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock Text="Категория услуг:"/>
+                <ComboBox Width="220"  HorizontalAlignment="Left" DisplayMemberPath="Name" Text="{Binding Type.Name}" Name="cbCotagories"/>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock Text="Добавтить фотографию"/>
+                
+                <StackPanel Orientation="Horizontal">
+                    <Button Content="Добавить" Height="24" Click="btnAddPhotoclick" Name="btnAdd"/>
+                    <Image Name="imgPhoto" Source="{Binding Photo, TargetNullValue={StaticResource zaglushka}}" Height="120" Width="80" Margin="20,0,0,0"/>
+                </StackPanel>
+               
+            </StackPanel>
+        </StackPanel>
+        <Button HorizontalAlignment="Center" VerticalAlignment="Bottom" Content="Выполнить" Margin="0,0,0,20" Height="20" Width="100" Click="btnGoClick"/>
+    </Grid>
+</Window>

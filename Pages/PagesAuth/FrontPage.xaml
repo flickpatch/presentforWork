@@ -1,0 +1,18 @@
+﻿<Page x:Class="AOA.Pages.PagesAuth.FrontPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AOA.Pages.PagesAuth"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="200"
+      Title="FrontPage" Background="White">
+
+    <Grid>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="5">
+            <TextBlock Text="Авторизация" TextDecorations="Underline" FontSize="13" PreviewMouseLeftButtonDown="clicktbclAuth" Name="tblAuth" Foreground="Purple" ToolTip="Открытие окна авторизации"/>
+            <TextBlock Text="|" Margin="10,0"/>
+            <TextBlock Text="Регистрация" TextDecorations="Underline" FontSize="13" Name="tblReg" Foreground="Purple" ToolTip="Открытие окна регистрации"  PreviewMouseLeftButtonDown="ClickTblRegistr"/>
+        </StackPanel>
+    </Grid>
+</Page>
